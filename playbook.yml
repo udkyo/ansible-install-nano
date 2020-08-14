@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: ensure nano is installed
+    apt:
+      name: nano
+      state: latest
+    become: true
